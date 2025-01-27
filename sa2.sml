@@ -75,8 +75,8 @@ val () =
 
 
 (**** Problem D ****)
-fun minList [] = raise Match 
-  | minList (a::xs) = foldl (fn (x, acc) => Int.min (x, acc)) a xs;
+fun minlist [] = raise Match 
+  | minlist (a::xs) = foldl (fn (x, acc) => Int.min (x, acc)) a xs;
 
 val () =
   Unit.checkExnWith Int.toString
