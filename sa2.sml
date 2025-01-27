@@ -81,12 +81,12 @@ fun minlist [] = raise Match
 val () =
   Unit.checkExnWith Int.toString
   "minlist [] should raise an exception"
-  (fn () => minList [])
+  (fn () => minlist [])
 
 val () =
   Unit.checkExpectWith Int.toString
   "minlist [1,2,3,4,0] should be 0"
-  (fn () => minList [1,2,3,4,0])
+  (fn () => minlist [1,2,3,4,0])
   0
 
 
